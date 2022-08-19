@@ -1,0 +1,387 @@
+html {
+    font-family: 'Epilogue', sans-serif;
+
+}
+
+
+
+
+
+a {
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+}
+
+.register {
+    border: 1px solid hsl(0, 0%, 41%);
+    border-radius: 20px;
+    padding: .1px 4rem .1px 4rem;
+
+
+}
+
+ul {
+    list-style: none;
+}
+
+
+header {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+
+}
+
+#burger-menu {
+    width: 70%;
+    right: 0;
+    visibility: hidden;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    background-color: white;
+
+}
+
+.nav-list {
+
+    margin-top: 5rem;
+    padding-left: 1rem;
+    height: 100vh;
+    text-align: left;
+    width: 70%;
+    line-height: 3.5rem;
+
+
+}
+
+.log-in-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-icons {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 2rem;
+    cursor: pointer;
+    z-index: 1500;
+}
+
+.hamburger {
+    margin-right: 0;
+
+}
+
+.close {
+    visibility: hidden;
+    margin-right: 2rem;
+
+}
+
+
+.sub-menu {
+
+    visibility: hidden;
+    /* display: none; */
+    position: initial;
+    max-height: 0;
+
+
+}
+
+#sub-menu-features {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 10rem;
+}
+
+#sub-menu-company {
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.snap-logo {
+    margin-left: .5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+}
+
+.screen-snap-logo {
+    position: relative;
+    top: -2.9rem;
+    left: .5rem;
+    /* visibility: hidden; */
+}
+
+#screen-menu-container {
+    display: none;
+}
+
+.image {
+    width: 100%;
+
+}
+
+.arrow-up {
+    visibility: hidden;
+    position: relative;
+    left: -.9rem;
+}
+
+.content-container {
+    margin-top: 5rem;
+    /* margin-right: auto;
+     margin-left: auto; */
+    min-height: 784px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#features {
+    cursor: pointer;
+    color: hsl(0, 0%, 41%);
+}
+
+
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+    max-width: 390px;
+}
+
+.button-learn {
+    font-weight: 800;
+    background-color: black;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+}
+
+.button-learn a {
+    color: white;
+}
+
+.bottom-logos img {
+    width: 5rem;
+
+}
+
+@media all and (min-width: 600px) {
+
+    .hamburger,
+    .close {
+        display: none;
+    }
+
+    #burger-menu-container {
+        display: none;
+    }
+
+    #screen-menu-container {
+        display: flex;
+        flex-direction: row;
+        /* align-items: baseline; */
+
+    }
+
+    #screen-menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        border: 1px solid red;
+        margin-top: 1rem;
+    }
+
+    .screen-nav-list {
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: 1px solid blue;
+    }
+
+    .screen-log-in-div {
+        display: flex;
+
+    }
+
+    .screen-register {
+        margin-left: 1rem;
+    }
+
+    .screen-snap-logo {
+        position: initial;
+        margin-left: .5rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+
+    }
+
+    .screen-sub-menu-features {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        /* margin-left: auto; */
+        padding-right: 1rem;
+        padding-left: 1rem;
+        /* visibility: hidden; */
+        border: 1px solid white;
+        border-radius: 10px;
+        background-color: white;
+        height: 10rem;
+        line-height: 1rem;
+        box-shadow: 10px 10px 20px 1px;
+
+        position: absolute;
+        left: 4rem;
+        top: 4.5rem;
+    }
+
+    .screen-sub-menu-company {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        /* margin-left: auto; */
+        padding-right: 1rem;
+        padding-left: 1rem;
+        /* visibility: hidden; */
+        border: 1px solid white;
+        border-radius: 10px;
+        background-color: white;
+        height: 7rem;
+        line-height: 1rem;
+        box-shadow: 10px 10px 20px 1px;
+
+        position: absolute;
+        left: 22rem;
+        top: 4.5rem;
+    }
+
+
+
+    /* header {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+
+    }
+
+
+
+    #features {
+        margin-right: 0;
+    }
+
+
+
+    #burger-menu {
+        display: flex;
+        width: 100%;
+        top: 0;
+
+        position: relative;
+
+    }
+
+    #burger-menu .nav-list {
+        visibility: visible;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-top: 0;
+
+
+        left: 0;
+
+        width: 95%;
+        height: 5rem;
+
+    }
+
+
+    .nav-list li {
+        margin-right: 1rem;
+    }
+
+    .ul-nav {
+        display: flex;
+
+    } */
+
+    /* #features:hover  #sub-menu-features {
+       
+        visibility: visible;
+         border: 1px solid white;
+         border-radius: 10px;
+         background-color: white;
+         height: 10rem;
+         line-height: 1rem;
+         box-shadow: 10px 10px 20px 1px  ;
+
+         position: absolute;
+     }
+     #company:hover  #sub-menu-company {
+       
+       visibility: visible;
+        border: 1px solid white;
+        border-radius: 10px;
+        background-color: white;
+        height: 10rem;
+        line-height: 1rem;
+        box-shadow: 10px 10px 20px 1px  ;
+
+        position: absolute;
+    } */
+
+
+
+    .log-in-div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .register {
+        padding: 0 .5rem 0 .5rem;
+        line-height: 2rem;
+        margin-left: 1rem;
+    }
+
+    .content-container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        top: 0;
+        border: 1px solid red;
+    }
+
+    .image {
+        width: 40%;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+    }
+}
