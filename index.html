@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down Menu</title>
+    <link rel="stylesheet" href="./resources/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&family=Raleway&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="burger-menu-container" class="container">
+            <img class="snap-logo" src="./resources/images/logo.svg" alt="snap logo">
+
+            <div class="menu-icons">
+                <img onclick="showBurgerMenu()" id="hamburger-menu" class="hamburger"
+                    src="./resources/images/icon-menu.svg" alt="">
+                <img onclick="hideBurgerMenu()" id="close-x" class="close" src="./resources/images/icon-close-menu.svg"
+                    alt="">
+
+            </div>
+
+            <nav id="burger-menu">
+
+
+                <ul class="nav-list">
+                    <li>
+                        <a href="#" onclick="showSubMenu(this.id)" id="features">Features <img class="arrow-down"
+                                src="./resources/images/icon-arrow-down.svg" alt="">
+                            <img class="arrow-up" src="./resources/images/icon-arrow-up.svg" alt=""></a>
+
+                        <ul id="burger-sub-menu-features" class="sub-menu sub-menu-features">
+                            <li>
+                                <img src="./resources/images/icon-todo.svg" alt="">
+                                <a href="#">To Do List</a>
+                            </li>
+                            <li>
+                                <img src="./resources/images/icon-reminders.svg" alt="">
+                                <a href="#">Reminder</a>
+                            </li>
+                            <li>
+                                <img src="./resources/images/icon-calendar.svg" alt="">
+                                <a href="#">Calendar</a>
+                            </li>
+                            <li>
+                                <img src="./resources/images/icon-planning.svg" alt="">
+                                <a href="#">Planning</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" onclick="showSubMenu(this.id)" id="company">Company <img
+                                src="./resources/images/icon-arrow-down.svg" alt=""></a>
+
+                        <ul id="burger-sub-menu-company" class="sub-menu sub-menu-company">
+                            <li>
+                                <a href="#">History</a>
+                            </li>
+                            <li>
+                                <a href="#">Our Team</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Career</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <div class="log-in-div">
+                        <a href="#">Log In</a>
+                        <a class="register" href="#">Register</a>
+                    </div>
+                </ul>
+
+            </nav>
+
+        </div>
+        <div id="screen-menu-container" class="screen-container">
+            <img class="screen-snap-logo" src="./resources/images/logo.svg" alt="snap logo">
+
+
+
+            <nav id="screen-menu">
+
+
+                <ul class="screen-nav-list">
+                    <li>
+                        <a href="#">Features <img class="screen-arrow-down" src="./resources/images/icon-arrow-down.svg"
+                                alt="">
+                            <img class="screen-arrow-up" src="./resources/images/icon-arrow-up.svg" alt=""></a>
+
+                        <ul class="screen-sub-menu screen-sub-menu-features">
+                            <li>
+                                <img src="./resources/images/icon-todo.svg" alt="">
+                                <a href="#">To Do List</a>
+                            </li>
+                            <li>
+                                <img src="./resources/images/icon-reminders.svg" alt="">
+                                <a href="#">Reminder</a>
+                            </li>
+                            <li>
+                                <img src="./resources/images/icon-calendar.svg" alt="">
+                                <a href="#">Calendar</a>
+                            </li>
+                            <li>
+                                <img src="./resources/images/icon-planning.svg" alt="">
+                                <a href="#">Planning</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Company <img src="./resources/images/icon-arrow-down.svg" alt=""></a>
+
+                        <ul class="screen-sub-menu screen-sub-menu-company">
+                            <li>
+                                <a href="#">History</a>
+                            </li>
+                            <li>
+                                <a href="#">Our Team</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Career</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+
+                </ul>
+                <div class="screen-log-in-div">
+                    <a href="#">Log In</a>
+                    <a class="screen-register" href="#">Register</a>
+                </div>
+
+            </nav>
+
+        </div>
+    </header>
+    <section class="content-container">
+        <img class="image" src="./resources/images/image-hero-mobile.png" alt="">
+        <div class="text">
+            <h1>Make Remote Work</h1>
+            <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch
+                productivity soar.</p>
+            <button>
+                <a href="#">Learn More</a>
+            </button>
+        </div>
+        <div class="bottom-logos">
+            <img src="./resources/images/client-databiz.svg" alt="databiz logo">
+            <img src="./resources/images/client-audiophile.svg" alt="audiophile logo">
+            <img src="./resources/images/client-meet.svg" alt="meet logo">
+            <img src="./resources/images/client-maker.svg" alt="maker logo">
+        </div>
+    </section>
+
+    <script src="./resources/app.js"></script>
+</body>
+
+</html>
