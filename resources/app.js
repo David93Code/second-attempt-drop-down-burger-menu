@@ -26,10 +26,10 @@ function hideBurgerMenu() {
     document.getElementById('burger-sub-menu-features').style.maxHeight = 0;
     document.getElementById('burger-sub-menu-company').style.maxHeight = 0;
 
-    document.getElementById('features-arrow-up').style.visibility = "hidden";
-    document.getElementById('features-arrow-down').style.visibility = "hidden";
-     document.getElementById('company-arrow-up').style.visibility = "hidden";
-     document.getElementById('company-arrow-down').style.visibility = "visible";
+    // document.getElementById('features-arrow-up').style.visibility = "hidden";
+    document.getElementById('features-arrow-down').src = "./resources/images/icon-arrow-down.svg";
+    //  document.getElementById('company-arrow-up').style.visibility = "hidden";
+     document.getElementById('company-arrow-down').src = "./resources/images/icon-arrow-down.svg";
 
 }
 
@@ -64,7 +64,7 @@ function showScreenSubMenu (btnID) {
     }
 }
 
-function hideScreenSubMenu () {
-    const screenSubMenu = documentgetElementById("screen-sub-menu-" + btnID);
-    screenSubMenu.style.visibility = "hidden";
-}
+// function hideScreenSubMenu () {
+//     const screenSubMenu = documentgetElementById("screen-sub-menu-" + btnID);
+//     screenSubMenu.style.visibility = "hidden";
+// }
