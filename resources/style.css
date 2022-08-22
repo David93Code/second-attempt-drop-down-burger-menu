@@ -232,13 +232,13 @@ header {
         padding-left: 1rem;
     }
 
-    .screen-nav-list  li {
+    .screen-nav-list li {
         margin-right: 2rem;
         text-align: left;
         font-size: 1rem;
     }
 
-   
+
 
     .screen-log-in-div {
         display: flex;
@@ -262,7 +262,7 @@ header {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        
+
         /* margin-left: auto; */
         padding-right: 0;
         padding-left: 1rem;
@@ -305,12 +305,13 @@ header {
         /* display: none; */
     }
 
-   
+
 
     .screen-nav-list li a:hover {
         color: black;
         font-weight: bolder;
     }
+
     #features:hover {
         color: black;
     }
@@ -319,9 +320,9 @@ header {
         color: black;
         font-weight: bolder;
     }
-  
 
-   
+
+
 
 
     /* header {
@@ -410,10 +411,10 @@ header {
     .screen-register {
         border: 1px solid black;
         border-radius: 7px;
-        padding: 3px 6px 3px 6px ;
+        padding: 3px 6px 3px 6px;
     }
 
-  
+
 
     .content-container {
         width: 100%;
@@ -432,35 +433,46 @@ header {
         height: 60vh;
     }
 
-  .text  {
-      width: 30%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      text-align: left;
-      height: 80%;
-      
-  }
+    .text {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left;
+        height: 80%;
 
-  .text h1 {
-      font-size: 4rem;
-  }
+    }
 
-  .text p {
-      font-size: 1.5rem;
-  }
+    .text h1 {
+        font-size: 4rem;
+    }
 
-  .learn-more {
-      font-size: 1rem;
-  }
-  .bottom-logos {
-      width: 90%;
-      display: flex;
-      justify-content: space-between;
-  }
+    .text p {
+        font-size: 1.5rem;
+    }
 
-  @media all and (min-width: 1000px) {
+    .learn-more {
+        font-size: 1rem;
+    }
+
+    .bottom-logos {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .learn-more:hover {
+        background-color: white;
+
+    }
+
+    .learn-more:hover a {
+        color: black;
+    }
+}
+
+@media all and (min-width: 1000px) {
     .text h1 {
         font-size: 5rem;
     }
@@ -468,4 +480,4 @@ header {
     .image {
         height: 80vh;
     }
-  }
+}
