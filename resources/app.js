@@ -9,7 +9,7 @@ function showBurgerMenu() {
     document.getElementById('burger-menu-container').style.top = 0;
     document.getElementById('burger-menu-container').style.left = 0;
     document.getElementById('burger-menu-container').style.bottom = 0;
-
+    
 }
 
 
@@ -26,10 +26,10 @@ function hideBurgerMenu() {
     document.getElementById('burger-sub-menu-features').style.maxHeight = 0;
     document.getElementById('burger-sub-menu-company').style.maxHeight = 0;
 
-    document.getElementById('features-up').style.visibility = "hidden";
-    document.getElementById('features-down').style.visibility = "hidden";
-    document.getElementById('company-up').style.visibility = "hidden";
-    document.getElementById('company-down').style.visibility = "hidden";
+    document.getElementById('features-arrow-up').style.visibility = "hidden";
+    document.getElementById('features-arrow-down').style.visibility = "hidden";
+     document.getElementById('company-arrow-up').style.visibility = "hidden";
+     document.getElementById('company-arrow-down').style.visibility = "visible";
 
 }
 
@@ -41,13 +41,30 @@ function showSubMenu(btnID) {
             subMenu.style.visibility = "hidden";
             subMenu.style.maxHeight = "0px";
 
-            document.getElementById(btnID + "-down").src = "./resources/images/icon-arrow-down.svg";
+            document.getElementById(btnID + "-arrow-down").src = "./resources/images/icon-arrow-down.svg";
         } else {
             subMenu.style.visibility = "visible";
             subMenu.style.maxHeight = "fit-content";
-            document.getElementById(btnID + "-down").src = "./resources/images/icon-arrow-up.svg";
+            document.getElementById(btnID + "-arrow-down").src = "./resources/images/icon-arrow-up.svg";
 
         }
     }
 
+}
+
+function showScreenSubMenu (btnID) {
+    console.log(btnID);
+    const screenSubMenu = document.getElementById("screen-sub-menu-" + btnID);
+    if (screenSubMenu.style.visibility == "visible") {
+        screenSubMenu.style.visibility = "hidden";
+        document.getElementById("screen-" + btnID + "-arrow-down").src = "./resources/images/icon-arrow-down.svg";
+    } else {
+        screenSubMenu.style.visibility = "visible";
+        document.getElementById("screen-" + btnID + "-arrow-down").src = "./resources/images/icon-arrow-up.svg";
+    }
+}
+
+function hideScreenSubMenu () {
+    const screenSubMenu = documentgetElementById("screen-sub-menu-" + btnID);
+    screenSubMenu.style.visibility = "hidden";
 }

@@ -1,6 +1,6 @@
 html {
     font-family: 'Epilogue', sans-serif;
-
+    box-sizing: border-box;
 }
 
 
@@ -165,18 +165,29 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-content: flex-start;
     margin-bottom: 2rem;
-    max-width: 390px;
+    /* max-width: 390px; */
+    height: 45vh;
 }
 
-.button-learn {
-    font-weight: 800;
+.text h1 {
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+
+
+.learn-more {
+    border: 1px solid black;
+    border-radius: 5px;
     background-color: black;
-    padding: .5rem 1rem;
-    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
 }
 
-.button-learn a {
+.learn-more a {
     color: white;
 }
 
@@ -208,17 +219,26 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: baseline;
-        border: 1px solid red;
         margin-top: 1rem;
     }
 
     .screen-nav-list {
-        width: 60%;
+        width: 25%;
+        min-width: 25rem;
+        /* margin-left: -2rem; */
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        border: 1px solid blue;
+        justify-content: flex-start;
+        padding-left: 1rem;
     }
+
+    .screen-nav-list  li {
+        margin-right: 2rem;
+        text-align: left;
+        font-size: 1rem;
+    }
+
+   
 
     .screen-log-in-div {
         display: flex;
@@ -227,6 +247,7 @@ header {
 
     .screen-register {
         margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     .screen-snap-logo {
@@ -234,18 +255,17 @@ header {
         margin-left: .5rem;
         margin-top: 2rem;
         margin-bottom: 1rem;
-
     }
 
     .screen-sub-menu-features {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        align-items: flex-end;
+        align-items: center;
+        
         /* margin-left: auto; */
-        padding-right: 1rem;
+        padding-right: 0;
         padding-left: 1rem;
-        /* visibility: hidden; */
         border: 1px solid white;
         border-radius: 10px;
         background-color: white;
@@ -254,8 +274,12 @@ header {
         box-shadow: 10px 10px 20px 1px;
 
         position: absolute;
-        left: 1.8rem;
-        top: 3.5rem;
+        /* left: 1.8rem; */
+        top: 4.5rem;
+        visibility: hidden;
+        left: 3rem;
+        /* display: none; */
+        z-index: 999;
     }
 
     .screen-sub-menu-company {
@@ -264,7 +288,7 @@ header {
         justify-content: space-around;
         align-items: flex-start;
         /* margin-left: auto; */
-        padding-right: 1rem;
+        padding-right: 0;
         padding-left: 1rem;
         /* visibility: hidden; */
         border: 1px solid white;
@@ -275,10 +299,29 @@ header {
         box-shadow: 10px 10px 20px 1px;
 
         position: absolute;
-        left: 12rem;
-        top: 3.5rem;
+        /* left: 12rem; */
+        top: 4.5rem;
+        visibility: hidden;
+        /* display: none; */
     }
 
+   
+
+    .screen-nav-list li a:hover {
+        color: black;
+        font-weight: bolder;
+    }
+    #features:hover {
+        color: black;
+    }
+
+    .screen-log-in-div a:hover {
+        color: black;
+        font-weight: bolder;
+    }
+  
+
+   
 
 
     /* header {
@@ -357,31 +400,72 @@ header {
 
 
 
-    .log-in-div {
+    .screen-log-in-div {
         display: flex;
         flex-direction: row;
+        align-items: center;
+        line-height: 1.5rem;
     }
 
-    .register {
-        padding: 0 .5rem 0 .5rem;
-        line-height: 2rem;
-        margin-left: 1rem;
+    .screen-register {
+        border: 1px solid black;
+        border-radius: 7px;
+        padding: 3px 6px 3px 6px ;
     }
+
+  
 
     .content-container {
+        width: 100%;
+        height: 100vh;
+        max-width: none;
         display: flex;
         flex-direction: row-reverse;
         align-items: flex-start;
+        justify-content: space-around;
         top: 0;
-        border: 1px solid red;
+        margin-bottom: 3rem;
     }
 
     .image {
         width: 40%;
+        height: 60vh;
     }
 
-    .text {
-        display: flex;
-        flex-direction: column;
+  .text  {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      text-align: left;
+      height: 80%;
+      
+  }
+
+  .text h1 {
+      font-size: 4rem;
+  }
+
+  .text p {
+      font-size: 1.5rem;
+  }
+
+  .learn-more {
+      font-size: 1rem;
+  }
+  .bottom-logos {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  @media all and (min-width: 1000px) {
+    .text h1 {
+        font-size: 5rem;
     }
-}
+
+    .image {
+        height: 80vh;
+    }
+  }

@@ -13,7 +13,7 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body onclick="hideScreenSubMenu()">
     <header>
         <div id="burger-menu-container" class="container">
             <img class="snap-logo" src="./resources/images/logo.svg" alt="snap logo">
@@ -31,9 +31,9 @@
 
                 <ul class="nav-list">
                     <li>
-                        <a href="#" onclick="showSubMenu(this.id)" id="features">Features <img class="arrow-down"
+                        <a href="#" onclick="showSubMenu(this.id)" id="features">Features <img id="features-arrow-down" class="arrow-down"
                                 src="./resources/images/icon-arrow-down.svg" alt="">
-                            <img class="arrow-up" src="./resources/images/icon-arrow-up.svg" alt=""></a>
+                            <!-- <img class="arrow-up" src="./resources/images/icon-arrow-up.svg" alt=""></a> -->
 
                         <ul id="burger-sub-menu-features" class="sub-menu sub-menu-features">
                             <li>
@@ -55,7 +55,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#" onclick="showSubMenu(this.id)" id="company">Company <img
+                        <a href="#" onclick="showSubMenu(this.id)" id="company">Company <img id="company-arrow-down"
                                 src="./resources/images/icon-arrow-down.svg" alt=""></a>
 
                         <ul id="burger-sub-menu-company" class="sub-menu sub-menu-company">
@@ -95,11 +95,11 @@
 
                 <ul class="screen-nav-list">
                     <li>
-                        <a href="#">Features <img class="screen-arrow-down" src="./resources/images/icon-arrow-down.svg"
+                        <a class="hover-text hover-text-features" href="#" onclick="showScreenSubMenu(this.id)" id="features">Features <img id="screen-features-arrow-down" class="screen-arrow-down" src="./resources/images/icon-arrow-down.svg"
                                 alt="">
-                            <img class="screen-arrow-up" src="./resources/images/icon-arrow-up.svg" alt=""></a>
+                            <!-- <img class="screen-arrow-up" src="./resources/images/icon-arrow-up.svg" alt=""></a> -->
 
-                        <ul class="screen-sub-menu screen-sub-menu-features">
+                        <ul id="screen-sub-menu-features" class="screen-sub-menu screen-sub-menu-features">
                             <li>
                                 <img src="./resources/images/icon-todo.svg" alt="">
                                 <a href="#">To Do List</a>
@@ -119,9 +119,9 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#">Company <img src="./resources/images/icon-arrow-down.svg" alt=""></a>
+                        <a class="hover-text" href="#" onclick="showScreenSubMenu(this.id)" id="company">Company <img id="screen-company-arrow-down" class="screen-arrow-down" src="./resources/images/icon-arrow-down.svg" alt=""></a>
 
-                        <ul class="screen-sub-menu screen-sub-menu-company">
+                        <ul id="screen-sub-menu-company" class="screen-sub-menu screen-sub-menu-company">
                             <li>
                                 <a href="#">History</a>
                             </li>
@@ -156,16 +156,17 @@
             <h1>Make Remote Work</h1>
             <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch
                 productivity soar.</p>
-            <button>
+            <button class="learn-more">
                 <a href="#">Learn More</a>
             </button>
+            <div class="bottom-logos">
+                <img src="./resources/images/client-databiz.svg" alt="databiz logo">
+                <img src="./resources/images/client-audiophile.svg" alt="audiophile logo">
+                <img src="./resources/images/client-meet.svg" alt="meet logo">
+                <img src="./resources/images/client-maker.svg" alt="maker logo">
+            </div>
         </div>
-        <div class="bottom-logos">
-            <img src="./resources/images/client-databiz.svg" alt="databiz logo">
-            <img src="./resources/images/client-audiophile.svg" alt="audiophile logo">
-            <img src="./resources/images/client-meet.svg" alt="meet logo">
-            <img src="./resources/images/client-maker.svg" alt="maker logo">
-        </div>
+       
     </section>
 
     <script src="./resources/app.js"></script>
